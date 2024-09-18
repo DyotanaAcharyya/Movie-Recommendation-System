@@ -7,3 +7,4 @@ PorterStemmer
 numpy
 gdown
 pandas
+streamlit
