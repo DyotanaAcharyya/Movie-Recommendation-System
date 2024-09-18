@@ -9,6 +9,7 @@ Original file is located at
 import pickle
 import streamlit as st
 import requests
+import gdown
 
 def fetch_poster(movie_id):
     url = "https://api.themoviedb.org/3/movie/{}?api_key=8265bd1679663a7ea12ac168da84d2e8&language=en-US".format(movie_id)
@@ -34,7 +35,14 @@ def recommend(movie):
 
 st.header('Movie Recommender System')
 movies = pickle.load(open('movies.sav','rb'))
-similarity = pickle.load(open('similarity.sav','rb'))
+
+url = 'https://drive.google.com/uc?id=1GxnvnNFPW0yqHyeoam3DCdMHy8N-Pj2F'
+output = 'similarity.sav'
+gdown.download(url, output, quiet=False)
+
+# Load the file using pickle
+with open(output, 'rb') as f:
+    similarity = pickle.load(f)
 
 movie_list = movies['title'].values
 selected_movie = st.selectbox(
