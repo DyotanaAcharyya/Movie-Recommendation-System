@@ -1,0 +1,9 @@
+pickle
+scikit-learn
+cosine_similarity
+CountVectorizer
+nltk
+PorterStemmer
+numpy
+gdown
+pandas
