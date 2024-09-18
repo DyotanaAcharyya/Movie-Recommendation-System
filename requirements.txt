@@ -1,7 +1,6 @@
 pip
 scikit-learn
 cosine_similarity
-CountVectorizer
 nltk
 PorterStemmer
 numpy
