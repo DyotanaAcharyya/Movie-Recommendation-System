@@ -1,4 +1,4 @@
-pickle
+pickle == 24.0
 scikit-learn
 cosine_similarity
 CountVectorizer
