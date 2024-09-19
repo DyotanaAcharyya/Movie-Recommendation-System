@@ -36,7 +36,7 @@ def recommend(movie):
 st.header('Movie Recommender System')
 movies = pickle.load(open('movies.sav','rb'))
 
-url = 'https://drive.google.com/uc?id=1GxnvnNFPW0yqHyeoam3DCdMHy8N-Pj2F'
+url = 'https://drive.google.com/uc?id=1-cKSw-NFkjhZAeSqVzV8wwvF6OqAvgtn'
 output = 'similarity.sav'
 gdown.download(url, output, quiet=False)
 
